@@ -9,7 +9,7 @@ public class Program {
         String [] lines = new String [] {"Good morning", "Good afternoon", "Good night"};
         String path = "/home/edimar/GerandoArquivo";
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
             for (String line: lines){
                 bw.write(line);
                 bw.newLine();
